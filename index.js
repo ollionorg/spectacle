@@ -111,7 +111,7 @@ module.exports = function (options) {
     });
 
     grunt.registerTask('stylesheets', ['sass:scss', 'concat:css', 'cssmin']);
-    grunt.registerTask('javascripts', ['concat:js', 'uglify']);
+    grunt.registerTask('javascripts', ['concat:js']);
     grunt.registerTask('templates', ['clean:html', 'compile-handlebars', 'predentation', 'prettify']);
     grunt.registerTask('foundation', ['sass:foundation_scss', 'concat:foundation_css']); // 'concat:foundation_js'
     grunt.registerTask('default', ['stylesheets', 'javascripts', 'foundation', 'templates']);
