@@ -26,6 +26,13 @@
             </h5>
           {{/if}}
         {{/if}}
+        
+        {{#if externalDocs}}
+          <h5>{{externalDocs.description}}</h5>
+          <div class="hljs">
+            <pre><a href="{{externalDocs.url}}">{{externalDocs.url}}</a></pre>
+          </div>
+        {{/if}}
 
         <!--
         {{#if consumes}}
